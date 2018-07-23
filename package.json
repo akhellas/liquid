@@ -25,11 +25,13 @@
     "typeface-roboto": "0.0.54"
   },
   "devDependencies": {
-    "@storybook/react": "^3.4.8",
     "@storybook/addon-actions": "^3.4.8",
     "@storybook/addon-links": "^3.4.8",
     "@storybook/addons": "^3.4.8",
+    "@storybook/react": "^3.4.8",
     "babel-core": "^6.26.3",
-    "babel-runtime": "^6.26.0"
+    "babel-runtime": "^6.26.0",
+    "last-release-git": "0.0.3",
+    "semantic-release": "^15.8.1"
   }
 }
