@@ -33,5 +33,20 @@
     "babel-runtime": "^6.26.0",
     "last-release-git": "0.0.3",
     "semantic-release": "^15.8.1"
+  },
+  "release": {
+    "verifyConditions": [
+      "@semantic-release/npm",
+      "@semantic-release/git",
+      "@semantic-release/github"
+    ],
+    "prepare": [
+      "@semantic-release/npm"
+    ],
+    "publish": [
+      "@semantic-release/npm",
+      "@semantic-release/github"
+    ],
+    "npmPublish": false
   }
 }
