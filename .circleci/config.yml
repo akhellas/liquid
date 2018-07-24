@@ -25,5 +25,5 @@ jobs:
 
       # run tests!
       - run: npm test
-      - run: npx semantic-release
+      #- run: npx semantic-release
 

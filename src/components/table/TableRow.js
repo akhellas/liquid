@@ -5,16 +5,16 @@ import MDCheckbox from '@material-ui/core/Checkbox'
 
 import TableCell from './TableCell'
 
-const DataTableRow = props => {
+const TableRow = props => {
   const { fields, data, hover, selected, onSelect, onClick } = props
   return (
     <MDTableRow hover={hover || true} selected={selected}>
       <MDTableCell padding="none">
         <MDCheckbox checked={selected} onChange={onSelect} />
       </MDTableCell>
-      {fields.map((field, index) => (
+      {fields.map(field => (
         <TableCell
-          key={index}
+          key={field.name}
           padding={field.padding}
           type={field.type}
           value={data[field.name]}
@@ -27,4 +27,4 @@ const DataTableRow = props => {
   )
 }
 
-export default DataTableRow
+export default TableRow
